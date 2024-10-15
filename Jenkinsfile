@@ -18,11 +18,13 @@ pipeline{
             }
         }
         stage('Checkout'){
-            checkout([
-                $class: 'GitSCM',
-                branches: [[name: "*/main"]],
-                userRemoteConfigs: [[url:"https://github.com/eswarmaganti/jenkins-multi-branch-pipeline.git"]]
-            ])
+            steps{
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: "*/main"]],
+                    userRemoteConfigs: [[url:"https://github.com/eswarmaganti/jenkins-multi-branch-pipeline.git"]]
+                ])
+            }
         }
         stage('Code Analysis'){
             steps{
