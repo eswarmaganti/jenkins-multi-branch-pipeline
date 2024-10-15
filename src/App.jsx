@@ -22,8 +22,7 @@ function App() {
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi
         illo voluptatibus. Omnis libero sequi asperiores assumenda quod earum
-        odio minima praesentium labore corporis ab saepe, quidem veniam! Culpa,
-        iure?
+        odio m
       </p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
